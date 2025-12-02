@@ -1,155 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Ardün – Regenerating Life in Indiana</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Ardün regenerates Indiana’s soil, ecosystems and communities through sustainable greenhouses, shared harvests and open-source knowledge.">
-  <meta property="og:title" content="Ardün – Regenerating Life in Indiana">
-  <meta property="og:description" content="Heal the soil. Grow the future. Support the people.">
-  <meta property="og:image" content="https://jwlynn97-ardun.github.io/Ardun/IMG_7362.jpeg">
-  <meta property="og:type" content="website">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌱</text></svg>">
-  <style>
-    :root{
-      --parchment:#f3e8d3;
-      --bronze:#a17a4f;
-      --gold:#d4af37;
-      --brown:#4a3c30;
-      --ink:#2a211c;
-      --white:#fff;
-      --gap:1rem;
-      --max:900px;
-    }
-    *{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth}
-    body{font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.6;color:var(--ink);background:var(--parchment)}
-    img{max-width:100%;display:block}
-    h1,h2,h3{letter-spacing:.5px;color:var(--bronze)}
-    a{text-decoration:none;color:inherit}
-    header{
-      min-height:70vh;
-      display:flex;align-items:center;justify-content:center;text-align:center;
-      background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url("IMG_7362.jpeg") center/cover no-repeat;
-      color:var(--white);
-    }
-    .hero h1{font-size:clamp(2.2rem,5vw,3.5rem)}
-    .hero p{font-size:1.25rem;margin:1rem 0 2rem}
-    .btn{
-      display:inline-block;background:var(--gold);color:var(--ink);padding:.75rem 1.5rem;border-radius:4px;font-weight:700;transition:.3s;
-    }
-    .btn:hover{background:var(--bronze);color:var(--white)}
-    section{padding:4rem 1rem}
-    .wrap{max-width:var(--max);margin:auto}
-    .grid{display:grid;gap:var(--gap);grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
-    .card{background:var(--white);padding:1.5rem;border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,.1)}
-    .quote{background:var(--gold);padding:2rem;border-left:6px solid var(--bronze);font-style:italic;margin:2.5rem 0;color:var(--ink)}
-    form input,form select,form textarea{width:100%;padding:.6rem;margin:.3rem 0;border:1px solid #ccc;border-radius:4px;font:inherit}
-    form button{margin-top:.5rem}
-    footer{text-align:center;padding:2rem 1rem;font-size:.9rem;background:var(--brown);color:var(--white)}
-    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
-    @media (prefers-contrast:high){body{background:#fff;color:#000}header{background:#000}}
-  </style>
-</head>
-<body>
+# Ardün – Regenerating Life in Indiana
 
-<header id="top">
-  <div class="hero">
-    <h1>Ardün</h1>
-    <p>“Heal the soil. Grow the future. Support the people.”</p>
-    <a class="btn" href="#donate">Support Ardün</a>
-    <a class="btn" href="#volunteer" style="margin-left:.5rem">Volunteer</a>
-  </div>
-</header>
+**"Heal the soil. Grow the future. Support the people."**
 
-<section id="about">
-  <div class="wrap">
-    <h2>Regenerating Indiana’s Land & Communities</h2>
-    <p>Ardün is a project dedicated to regenerating Indiana’s land, restoring ecosystems, and growing resilient communities. We focus on ecological restoration, sustainable food production, and hands-on innovation that respects both people and the planet.</p>
-    <p>Our greenhouses act as living laboratories where plants thrive under controlled environmental conditions, simulating prehistoric soil and atmosphere. Half of our yields support local communities through donations and shared resources; the other half sustains the project so we can continue expanding and innovating. Every seed we plant and every ecosystem we restore is part of a larger vision to reconnect humans with the land and with each other.</p>
+Ardün is a volunteer-powered project that rebuilds healthy soil, restores ecosystems, and grows resilient communities through regenerative greenhouses, shared harvests, and open-source knowledge.
 
-    <div class="grid" style="margin-top:2rem">
-      <div class="card"><h3>🌱 Regeneration</h3><p>Healing soil and ecosystems first.</p></div>
-      <div class="card"><h3>🤝 Community</h3><p>Sharing resources, knowledge, and growth.</p></div>
-      <div class="card"><h3>🌍 Stewardship</h3><p>Acting ethically for future generations.</p></div>
-    </div>
-  </div>
-</section>
+## 📍  Where We Work
+Indiana – greenhouse living labs that double as classrooms and donation hubs.
 
-<section>
-  <div class="wrap">
-    <div class="quote">“Heal the soil. Grow the future. Support the people. Remember the past.”</div>
-  </div>
-</section>
+## 🌱  What We Do
+- **Regenerate soil** with prehistoric-atmosphere simulations  
+- **Share half** of every harvest with local families & food pantries  
+- **Teach** volunteers soil science, logistics, and sustainable growing  
+- **Document everything** so the model can spread across the Midwest
 
-<section id="donate">
-  <div class="wrap">
-    <h2>Support Ardün: Every Seed Grows a Future</h2>
-    <a class="btn" href="https://account.venmo.com/u/Joel-Lynn-1" target="_blank" rel="noopener">Venmo&nbsp;@Joel-Lynn-1</a>
-  </div>
-</section>
+## ✅  Phase-1 Live Site
+Visit the full site (built & hosted free on GitHub Pages):  
+👉  [https://jwlynn97-ardun.github.io/Ardun/](https://jwlynn97-ardun.github.io/Ardun/)
 
-<section id="volunteer">
-  <div class="wrap">
-    <h2>Volunteer</h2>
-    <form action="https://submit-form.com/Jwlynn97@gmail.com" method="POST">
-      <input type="hidden" name="_redirect" value="https://jwlynn97-ardun.github.io/Ardun/#thanks">
-      <label><input type="text" name="name" placeholder="Name" required></label>
-      <label><input type="email" name="email" placeholder="Email" required></label>
-      <label><input type="tel" name="phone" placeholder="Phone (optional)"></label>
-      <label>
-        <select name="availability">
-          <option value="">Availability</option>
-          <option>Weekdays</option>
-          <option>Weekends</option>
-          <option>Flexible</option>
-        </select>
-      </label>
-      <label><textarea name="skills" placeholder="Skills / Interests (gardening, soil science, logistics, etc.)" rows="3"></textarea></label>
-      <button class="btn" type="submit">Send</button>
-    </form>
-    <p style="margin-top:1rem;font-size:.9rem">We’ll email you within 24 h. Questions? Call/text <a href="tel:+13073496762">307-349-6762</a></p>
-  </div>
-</section>
+## 💚  Get Involved
+- **Volunteer** – fill the form on the site  
+- **Donate** – Venmo @Joel-Lynn-1 (every seed grows a future)  
+- **Follow** – latest updates on [TikTok @theatlasinitiative](https://www.tiktok.com/@theatlasinitiative)
 
-<section id="news">
-  <div class="wrap">
-    <h2>Stay Updated</h2>
-    <p>Get volunteer days, harvest reports, and project news.</p>
-    <form action="https://buttondown.email/api/emails/embed-subscribe/ardun" method="post" target="popup" onsubmit="window.open('about:blank','popup','width=500,height=400');">
-      <label><input type="email" name="email" placeholder="Email" required></label>
-      <button class="btn" type="submit">Subscribe</button>
-    </form>
-  </div>
-</section>
+## 📸  Repo Assets
+All images / code here are released under MIT licence – use, fork, improve.
 
-<!-- ONLY ONE TIKTOK SECTION -->
-<section id="tiktok" style="text-align:center;padding:4rem 1rem;">
-  <div class="wrap">
-    <h2>Latest Update</h2>
-    <div class="tiktok-wrap" style="max-width:325px;margin:2rem auto;">
-      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@theatlasinitiative/video" data-unique-id="theatlasinitiative" data-limit="1" data-width="325">
-        <section></section>
-      </blockquote>
-    </div>
-  </div>
-</section>
-<script src="https://www.tiktok.com/embed.js" async></script>
+---
 
-<!-- THANK-YOU TARGET -->
-<section id="thanks" style="text-align:center;padding:2rem;">
-  <h2>Thanks for volunteering!</h2>
-  <p>We’ll be in touch within 24 h.</p>
-</section>
-
-<footer>
-  <p>Ardün Project · Indiana · <a href="tel:+13073496762" style="color:var(--gold)">307-349-6762</a></p>
-  <p><a href="#top">Back to top</a></p>
-</footer>
-
-<script>
-  document.getElementById('yr').textContent = new Date().getFullYear();
-</script>
-
-</body>
-</html>
+Questions?  Text/call **307-349-6762** or open an Issue in this repo.
