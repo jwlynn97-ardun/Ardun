@@ -85,17 +85,15 @@
 <section id="donate">
   <div class="wrap">
     <h2>Support Ardün: Every Seed Grows a Future</h2>
-    <div class="grid">
-      <a class="btn" href="https://account.venmo.com/u/ArdunIndiana" target="_blank" rel="noopener">Venmo&nbsp;@ArdunIndiana</a>
-      <a class="btn" href="https://paypal.me/ArdunIndiana" target="_blank" rel="noopener">PayPal</a>
-    </div>
+    <a class="btn" href="https://account.venmo.com/u/Joel-Lynn-1" target="_blank" rel="noopener">Venmo&nbsp;@Joel-Lynn-1</a>
   </div>
 </section>
 
 <section id="volunteer">
   <div class="wrap">
     <h2>Volunteer</h2>
-    <form action="https://formspree.io/f/xvonozzr" method="POST">
+    <form action="https://submit-form.com/Jwlynn97@gmail.com" method="POST">
+      <input type="hidden" name="_redirect" value="https://jwlynn97-ardun.github.io/Ardun/#thanks">
       <label><input type="text" name="name" placeholder="Name" required></label>
       <label><input type="email" name="email" placeholder="Email" required></label>
       <label><input type="tel" name="phone" placeholder="Phone (optional)"></label>
@@ -125,15 +123,22 @@
   </div>
 </section>
 
-<section id="gallery">
+<!-- LATEST TIKTOK (not pinned) -->
+<section id="tiktok" style="text-align:center;padding:4rem 1rem;">
   <div class="wrap">
-    <h2>Greenhouse & Growth</h2>
-    <div class="grid">
-      <img src="IMG_7363.jpeg" alt="Greenhouse interior">
-      <img src="IMG_7364.jpeg" alt="Plant close-up">
-      <img src="IMG_7365.jpeg" alt="Team working">
+    <h2>Latest Update</h2>
+    <div class="tiktok-wrap" style="max-width:325px;margin:2rem auto;">
+      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@theatlasinitiative" data-unique-id="theatlasinitiative" data-limit="1" data-width="325">
+        <section></section>
+      </blockquote>
     </div>
   </div>
+</section>
+
+<!-- THANK-YOU TARGET -->
+<section id="thanks" style="text-align:center;padding:2rem;">
+  <h2>Thanks for volunteering!</h2>
+  <p>We’ll be in touch within 24 h.</p>
 </section>
 
 <footer>
