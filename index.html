@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8" />
   <title>Ardün – Regenerating Life in Indiana</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Ardün regenerates Indiana’s soil, ecosystems and communities through sustainable greenhouses, shared harvests and open-source knowledge.">
-
-  <meta property="og:title" content="Ardün – Regenerating Life in Indiana">
-  <meta property="og:description" content="Heal the soil. Grow the future. Support the people.">
-  <meta property="og:image" content="https://jwlynn97-ardun.github.io/Ardun/IMG_7376.jpeg">
-  <meta property="og:type" content="website">
-
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌱</text></svg>">
-
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Ardün regenerates Indiana’s soil, ecosystems and communities through sustainable greenhouses, shared harvests and open-source knowledge." />
+  <meta property="og:title" content="Ardün – Regenerating Life in Indiana" />
+  <meta property="og:description" content="Heal the soil. Grow the future. Support the people." />
+  <meta property="og:image" content="https://jwlynn97-ardun.github.io/Ardun/IMG_7376.jpeg" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌱</text></svg>" />
   <style>
     :root {
       --parchment:#f3e8d3;
@@ -24,156 +21,153 @@
       --gap:1rem;
       --max:900px;
     }
-    * {box-sizing:border-box;margin:0;padding:0}
-    body {
-      font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-      line-height:1.6;
-      color:var(--ink);
-      background:var(--parchment);
-    }
-    img {max-width:100%;display:block}
-    h1,h2,h3 {letter-spacing:.5px;color:var(--bronze)}
-    a {text-decoration:none;color:inherit}
-    header {
-      min-height:70vh;
-      display:flex;align-items:center;justify-content:center;text-align:center;
-      background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
-                 url("IMG_7376.jpeg") center/cover no-repeat;
-      color:var(--white);
-    }
-    .hero h1 {font-size:clamp(2.2rem,5vw,3.5rem)}
-    .hero p {font-size:1.25rem;margin:1rem 0 2rem}
-    .btn {
-      display:inline-block;background:var(--gold);color:var(--ink);
-      padding:.75rem 1.5rem;border-radius:4px;font-weight:700;transition:.3s;
-    }
-    .btn:hover {background:var(--bronze);color:var(--white)}
-    section {padding:4rem 1rem}
-    .wrap {max-width:var(--max);margin:auto}
-    .grid {display:grid;gap:var(--gap);grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
-    .card {
-      background:var(--white);padding:1.5rem;border-radius:6px;
-      box-shadow:0 2px 6px rgba(0,0,0,.1)
-    }
-    .quote {
-      background:var(--gold);padding:2rem;border-left:6px solid var(--bronze);
-      font-style:italic;margin:2.5rem 0;color:var(--ink)
-    }
-    form input {
-      width:100%;padding:.6rem;margin:.3rem 0;
-      border:1px solid #ccc;border-radius:4px;font:inherit;
-    }
-    form button {margin-top:.5rem}
-    footer {
-      text-align:center;padding:2rem 1rem;font-size:.9rem;
-      background:var(--brown);color:var(--white)
-    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.6;color:var(--ink);background:var(--parchment)}
+    img{max-width:100%;display:block}
+    h1,h2,h3{letter-spacing:.5px;color:var(--bronze)}
+    a{text-decoration:none;color:inherit}
+    header{min-height:70vh;display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url("IMG_7376.jpeg") center/cover no-repeat;color:var(--white)}
+    .hero h1{font-size:clamp(2.2rem,5vw,3.5rem)}
+    .hero p{font-size:1.25rem;margin:1rem 0 2rem}
+    .btn{display:inline-block;background:var(--gold);color:var(--ink);padding:.75rem 1.5rem;border-radius:4px;font-weight:700;transition:.3s}
+    .btn:hover{background:var(--bronze);color:var(--white)}
+    section{padding:4rem 1rem}
+    .wrap{max-width:var(--max);margin:auto}
+    .grid{display:grid;gap:var(--gap);grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+    .card{background:var(--white);padding:1.5rem;border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,.1)}
+    .quote{background:var(--gold);padding:2rem;border-left:6px solid var(--bronze);font-style:italic;margin:2.5rem 0;color:var(--ink)}
+    form input{width:100%;padding:.6rem;margin:.3rem 0;border:1px solid #ccc;border-radius:4px;font:inherit}
+    form button{margin-top:.5rem}
+    footer{text-align:center;padding:2rem 1rem;font-size:.9rem;background:var(--brown);color:var(--white)}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+    @media (prefers-contrast:high){body{background:#fff;color:#000}header{background:#000}}
   </style>
 </head>
-
 <body>
-
-<header id="top">
-  <div class="hero">
-    <h1>Ardün</h1>
-    <p>“Heal the soil. Grow the future. Support the people.”</p>
-    <a class="btn" href="#donate">Support Ardün</a>
-  </div>
-</header>
-
-<section id="about">
-  <div class="wrap">
-    <h2>Regenerating Indiana’s Land & Communities</h2>
-    <p>Ardün is a project dedicated to regenerating Indiana’s land, restoring ecosystems, and growing resilient communities. We focus on ecological restoration, sustainable food production, and hands-on innovation that respects both people and the planet.</p>
-    
-    <p>Our greenhouses act as living laboratories where plants thrive under controlled environmental conditions, simulating prehistoric soil and atmosphere. Half of our yields support local communities through donations and shared resources; the other half sustains the project so we can continue expanding and innovating. Every seed we plant and every ecosystem we restore is part of a larger vision to reconnect humans with the land and with each other.</p>
-
-    <div class="grid" style="margin-top:2rem">
-      <div class="card"><h3>🌱 Regeneration</h3><p>Healing soil and ecosystems first.</p></div>
-      <div class="card"><h3>🤝 Community</h3><p>Sharing resources, knowledge, and growth.</p></div>
-      <div class="card"><h3>🌍 Stewardship</h3><p>Acting ethically for future generations.</p></div>
+  <header id="top">
+    <div class="hero">
+      <h1>Ardün</h1>
+      <p>“Heal the soil. Grow the future. Support the people.”</p>
+      <a class="btn" href="#donate">Support Ardün</a>
     </div>
-  </div>
-</section>
+  </header>
 
-<section>
-  <div class="wrap">
-    <div class="quote">“Heal the soil. Grow the future. Support the people. Remember the past.”</div>
-  </div>
-</section>
+  <section id="about">
+    <div class="wrap">
+      <h2>Regenerating Indiana’s Land & Communities</h2>
+      <p>Ardün is a project dedicated to regenerating Indiana’s land, restoring ecosystems, and growing resilient communities. We focus on ecological restoration, sustainable food production, and hands-on innovation that respects both people and the planet.</p>
+      <p>Our greenhouses act as living laboratories where plants thrive under controlled environmental conditions, simulating prehistoric soil and atmosphere. Half of our yields support local communities through donations and shared resources; the other half sustains the project so we can continue expanding and innovating. Every seed we plant and every ecosystem we restore is part of a larger vision to reconnect humans with the land and with each other.</p>
 
-<section id="donate">
-  <div class="wrap">
-    <h2>Support Ardün: Every Seed Grows a Future</h2>
-    <div class="grid">
-      <a class="btn" href="https://account.venmo.com/u/Joel-Lynn-1" target="_blank">Venmo @Joel-Lynn-1</a>
-      <a class="btn" href="https://www.tiktok.com/@theatlasinitiative" target="_blank">Follow on TikTok</a>
+      <div class="grid" style="margin-top:2rem">
+        <div class="card"><h3>🌱 Regeneration</h3><p>Healing soil and ecosystems first.</p></div>
+        <div class="card"><h3>🤝 Community</h3><p>Sharing resources, knowledge, and growth.</p></div>
+        <div class="card"><h3>🌍 Stewardship</h3><p>Acting ethically for future generations.</p></div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="news">
-  <div class="wrap">
-    <h2>Stay Updated</h2>
-    <p>Get harvest reports, announcements, and project updates.</p>
+  <section>
+    <div class="wrap">
+      <div class="quote">“Heal the soil. Grow the future. Support the people. Remember the past.”</div>
+    </div>
+  </section>
 
-    <!-- AJAX Subscribe Form -->
-    <form id="bd-form">
-      <input type="email" id="bd-email" placeholder="Email" required />
-      <button class="btn" type="submit">Subscribe</button>
-    </form>
+  <section id="donate">
+    <div class="wrap">
+      <h2>Support Ardün: Every Seed Grows a Future</h2>
+      <div class="grid">
+        <a class="btn" href="https://account.venmo.com/u/Joel-Lynn-1" target="_blank" rel="noopener">Venmo @Joel-Lynn-1</a>
+        <a class="btn" href="https://www.tiktok.com/@theatlasinitiative" target="_blank" rel="noopener">Follow on TikTok</a>
+      </div>
+    </div>
+  </section>
 
-    <p id="bd-success" style="margin-top:1rem;color:green;display:none;">
-      🎉 You’re subscribed! Check your email for confirmation.
-    </p>
-    <p id="bd-error" style="margin-top:1rem;color:red;display:none;">
-      Something went wrong. Please try again.
-    </p>
+  <section id="news">
+    <div class="wrap">
+      <h2>Stay Updated</h2>
+      <p>Get harvest reports, announcements, and project updates.</p>
 
-    <p style="margin-top:1rem;">
-      <a href="https://buttondown.com/jwlynn97" target="_blank">Powered by Buttondown</a>
-    </p>
-  </div>
-</section>
+      <!-- AJAX subscribe form (URL-encoded) -->
+      <form id="bd-form">
+        <label class="sr-only" for="bd-email">Email</label>
+        <input id="bd-email" type="email" placeholder="Email" required />
+        <button class="btn" type="submit">Subscribe</button>
+      </form>
 
-<section id="thanks" style="text-align:center;padding:2rem;">
-  <h2>Thanks for supporting Ardün!</h2>
-  <p>We’ll be in touch soon.</p>
-</section>
+      <p id="bd-success" style="margin-top:1rem;color:green;display:none;">🎉 You’re subscribed! Check your email for confirmation.</p>
+      <p id="bd-error" style="margin-top:1rem;color:red;display:none;">Something went wrong. See console for details.</p>
 
-<footer>
-  <p>Ardün Project · Indiana · 
-    <a href="tel:+13073496762" style="color:var(--gold)">307-349-6762</a>
-  </p>
-  <p><a href="#top" style="color:var(--gold)">Back to top</a></p>
-</footer>
+      <p style="margin-top:1rem;"><a href="https://buttondown.com/jwlynn97" target="_blank" rel="noopener">Powered by Buttondown</a></p>
+    </div>
+  </section>
 
-<script>
-// AJAX Subscribe Handler
-document.getElementById('bd-form').addEventListener('submit', async function (e) {
-  e.preventDefault();
+  <section id="thanks" style="text-align:center;padding:2rem;">
+    <h2>Thanks for supporting Ardün!</h2>
+    <p>We’ll be in touch soon.</p>
+  </section>
 
-  const email = document.getElementById('bd-email').value;
+  <footer>
+    <p>Ardün Project · Indiana · <a href="tel:+13073496762" style="color:var(--gold)">307-349-6762</a></p>
+    <p><a href="#top" style="color:var(--gold)">Back to top</a></p>
+  </footer>
 
-  const res = await fetch("https://buttondown.email/api/emails/embed-subscribe/jwlynn97", {
-    method: "POST",
-    headers: {"Content-Type": "application/json"},
-    body: JSON.stringify({
-      email: email,
-      tag: "ardun"
-    })
-  });
+  <script>
+    (function () {
+      const form = document.getElementById('bd-form');
+      const emailInput = document.getElementById('bd-email');
+      const success = document.getElementById('bd-success');
+      const error = document.getElementById('bd-error');
 
-  if (res.ok) {
-    document.getElementById('bd-success').style.display = 'block';
-    document.getElementById('bd-error').style.display = 'none';
-    document.getElementById('bd-form').reset();
-  } else {
-    document.getElementById('bd-success').style.display = 'none';
-    document.getElementById('bd-error').style.display = 'block';
-  }
-});
-</script>
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        success.style.display = 'none';
+        error.style.display = 'none';
 
+        const email = emailInput.value.trim();
+        if (!email) {
+          error.textContent = 'Please enter a valid email.';
+          error.style.display = 'block';
+          return;
+        }
+
+        // Prepare urlencoded body
+        const params = new URLSearchParams();
+        params.append('email', email);
+        params.append('tag', 'ardun'); // required tag for Buttondown
+        // _next can be included but we will not rely on redirect; keeping for completeness
+        params.append('_next', 'https://buttondown.com/jwlynn97/archive');
+
+        try {
+          const res = await fetch('https://buttondown.email/api/emails/embed-subscribe/jwlynn97', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+            },
+            body: params.toString(),
+            credentials: 'omit'
+          });
+
+          // log for debugging
+          console.log('Buttondown response status:', res.status);
+          const text = await res.text();
+          console.log('Buttondown response text:', text);
+
+          if (res.ok) {
+            success.style.display = 'block';
+            error.style.display = 'none';
+            form.reset();
+          } else {
+            // Buttondown sometimes responds 200 but with HTML; check text for clues
+            error.style.display = 'block';
+            error.textContent = 'Subscription failed. Check console for details.';
+          }
+        } catch (err) {
+          console.error('Fetch error:', err);
+          error.style.display = 'block';
+          error.textContent = 'Network error. Please try again.';
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
