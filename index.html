@@ -5,10 +5,12 @@
   <title>Ardün – Regenerating Life in Indiana</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Ardün regenerates Indiana’s soil, ecosystems and communities through sustainable greenhouses, shared harvests and open-source knowledge.">
+
   <meta property="og:title" content="Ardün – Regenerating Life in Indiana">
   <meta property="og:description" content="Heal the soil. Grow the future. Support the people.">
   <meta property="og:image" content="https://jwlynn97-ardun.github.io/Ardun/IMG_7376.jpeg">
   <meta property="og:type" content="website">
+
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌱</text></svg>">
 
   <style>
@@ -57,7 +59,7 @@
       background:var(--gold);padding:2rem;border-left:6px solid var(--bronze);
       font-style:italic;margin:2.5rem 0;color:var(--ink)
     }
-    form input, form textarea, form select {
+    form input {
       width:100%;padding:.6rem;margin:.3rem 0;
       border:1px solid #ccc;border-radius:4px;font:inherit;
     }
@@ -68,6 +70,7 @@
     }
   </style>
 </head>
+
 <body>
 
 <header id="top">
@@ -82,6 +85,7 @@
   <div class="wrap">
     <h2>Regenerating Indiana’s Land & Communities</h2>
     <p>Ardün is a project dedicated to regenerating Indiana’s land, restoring ecosystems, and growing resilient communities. We focus on ecological restoration, sustainable food production, and hands-on innovation that respects both people and the planet.</p>
+    
     <p>Our greenhouses act as living laboratories where plants thrive under controlled environmental conditions, simulating prehistoric soil and atmosphere. Half of our yields support local communities through donations and shared resources; the other half sustains the project so we can continue expanding and innovating. Every seed we plant and every ecosystem we restore is part of a larger vision to reconnect humans with the land and with each other.</p>
 
     <div class="grid" style="margin-top:2rem">
@@ -111,15 +115,20 @@
 <section id="news">
   <div class="wrap">
     <h2>Stay Updated</h2>
-    <p>Get harvest reports, announcements, and progress updates.</p>
+    <p>Get harvest reports, announcements, and project updates.</p>
 
-    <!-- FIXED FORM — USING THE CORRECT `.email` DOMAIN -->
-    <form action="https://buttondown.email/api/emails/embed-subscribe/jwlynn97" method="post">
-      <input type="email" name="email" placeholder="Email" required />
-      <input type="hidden" name="tag" value="ardun" />
-      <input type="hidden" name="_next" value="https://buttondown.com/jwlynn97/archive" />
+    <!-- AJAX Subscribe Form -->
+    <form id="bd-form">
+      <input type="email" id="bd-email" placeholder="Email" required />
       <button class="btn" type="submit">Subscribe</button>
     </form>
+
+    <p id="bd-success" style="margin-top:1rem;color:green;display:none;">
+      🎉 You’re subscribed! Check your email for confirmation.
+    </p>
+    <p id="bd-error" style="margin-top:1rem;color:red;display:none;">
+      Something went wrong. Please try again.
+    </p>
 
     <p style="margin-top:1rem;">
       <a href="https://buttondown.com/jwlynn97" target="_blank">Powered by Buttondown</a>
@@ -138,6 +147,33 @@
   </p>
   <p><a href="#top" style="color:var(--gold)">Back to top</a></p>
 </footer>
+
+<script>
+// AJAX Subscribe Handler
+document.getElementById('bd-form').addEventListener('submit', async function (e) {
+  e.preventDefault();
+
+  const email = document.getElementById('bd-email').value;
+
+  const res = await fetch("https://buttondown.email/api/emails/embed-subscribe/jwlynn97", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({
+      email: email,
+      tag: "ardun"
+    })
+  });
+
+  if (res.ok) {
+    document.getElementById('bd-success').style.display = 'block';
+    document.getElementById('bd-error').style.display = 'none';
+    document.getElementById('bd-form').reset();
+  } else {
+    document.getElementById('bd-success').style.display = 'none';
+    document.getElementById('bd-error').style.display = 'block';
+  }
+});
+</script>
 
 </body>
 </html>
