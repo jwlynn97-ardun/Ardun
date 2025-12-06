@@ -36,10 +36,7 @@
     .grid{display:grid;gap:var(--gap);grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
     .card{background:var(--white);padding:1.5rem;border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,.1)}
     .quote{background:var(--gold);padding:2rem;border-left:6px solid var(--bronze);font-style:italic;margin:2.5rem 0;color:var(--ink)}
-    form input{width:100%;padding:.6rem;margin:.3rem 0;border:1px solid #ccc;border-radius:4px;font:inherit}
-    form button{margin-top:.5rem}
     footer{text-align:center;padding:2rem 1rem;font-size:.9rem;background:var(--brown);color:var(--white)}
-    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
     @media (prefers-contrast:high){body{background:#fff;color:#000}header{background:#000}}
   </style>
 </head>
@@ -87,17 +84,14 @@
       <h2>Stay Updated</h2>
       <p>Get harvest reports, announcements, and project updates.</p>
 
-      <!-- AJAX subscribe form (URL-encoded) -->
-      <form id="bd-form">
-        <label class="sr-only" for="bd-email">Email</label>
-        <input id="bd-email" type="email" placeholder="Email" required />
-        <button class="btn" type="submit">Subscribe</button>
-      </form>
+      <!-- Google Form Subscribe Button -->
+      <a class="btn"
+         href="https://docs.google.com/forms/d/e/1FAIpQLScCsmLcGctYxaSvoeJcmD_pdPzpQI11ffVe0-gd9GggI0RN1w/viewform?usp=publish-editor"
+         target="_blank"
+         rel="noopener">
+        Subscribe
+      </a>
 
-      <p id="bd-success" style="margin-top:1rem;color:green;display:none;">🎉 You’re subscribed! Check your email for confirmation.</p>
-      <p id="bd-error" style="margin-top:1rem;color:red;display:none;">Something went wrong. See console for details.</p>
-
-      <p style="margin-top:1rem;"><a href="https://buttondown.com/jwlynn97" target="_blank" rel="noopener">Powered by Buttondown</a></p>
     </div>
   </section>
 
@@ -111,63 +105,5 @@
     <p><a href="#top" style="color:var(--gold)">Back to top</a></p>
   </footer>
 
-  <script>
-    (function () {
-      const form = document.getElementById('bd-form');
-      const emailInput = document.getElementById('bd-email');
-      const success = document.getElementById('bd-success');
-      const error = document.getElementById('bd-error');
-
-      form.addEventListener('submit', async function (e) {
-        e.preventDefault();
-        success.style.display = 'none';
-        error.style.display = 'none';
-
-        const email = emailInput.value.trim();
-        if (!email) {
-          error.textContent = 'Please enter a valid email.';
-          error.style.display = 'block';
-          return;
-        }
-
-        // Prepare urlencoded body
-        const params = new URLSearchParams();
-        params.append('email', email);
-        params.append('tag', 'ardun'); // required tag for Buttondown
-        // _next can be included but we will not rely on redirect; keeping for completeness
-        params.append('_next', 'https://buttondown.com/jwlynn97/archive');
-
-        try {
-          const res = await fetch('https://buttondown.email/api/emails/embed-subscribe/jwlynn97', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
-            },
-            body: params.toString(),
-            credentials: 'omit'
-          });
-
-          // log for debugging
-          console.log('Buttondown response status:', res.status);
-          const text = await res.text();
-          console.log('Buttondown response text:', text);
-
-          if (res.ok) {
-            success.style.display = 'block';
-            error.style.display = 'none';
-            form.reset();
-          } else {
-            // Buttondown sometimes responds 200 but with HTML; check text for clues
-            error.style.display = 'block';
-            error.textContent = 'Subscription failed. Check console for details.';
-          }
-        } catch (err) {
-          console.error('Fetch error:', err);
-          error.style.display = 'block';
-          error.textContent = 'Network error. Please try again.';
-        }
-      });
-    })();
-  </script>
 </body>
 </html>
