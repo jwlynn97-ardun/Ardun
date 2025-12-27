@@ -40,10 +40,23 @@
     section{padding:4rem 1rem}
     .wrap{max-width:var(--max);margin:auto}
     .grid{display:grid;gap:var(--gap);grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
-    .card{background:var(--white);padding:1.5rem;border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,.1)}
+    .card{background:var(--white);padding:1.5rem;border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,.1);position:relative}
     .quote{background:var(--gold);padding:2rem;border-left:6px solid var(--bronze);font-style:italic;margin:2.5rem 0;color:var(--ink)}
     footer{text-align:center;padding:2rem 1rem;font-size:.9rem;background:var(--brown);color:var(--white)}
     @media (prefers-contrast:high){body{background:#fff;color:#000}header{background:#000}}
+
+    /* --- shop mini-photo tweak --- */
+    .mini-photo{
+      position:absolute;
+      bottom:1rem;
+      right:1rem;
+      width:90px;          /* small */
+      border:2px solid var(--bronze);
+      border-radius:4px;
+    }
+    .mini-photo figcaption{
+      display:none;        /* keep it clean */
+    }
   </style>
 </head>
 
@@ -82,14 +95,6 @@
   <div class="wrap">
     <h2>Community Shop</h2>
 
-    <!-- new product photo -->
-    <figure style="margin:2rem 0;text-align:center">
-      <img src="IMG_7758.jpeg" alt="Hand holding a fresh Ardün sticker against a greenhouse background" />
-      <figcaption style="font-size:.875rem;color:var(--bronze);margin-top:.5rem">
-        Ardün sticker fresh from the greenhouse.
-      </figcaption>
-    </figure>
-
     <div class="grid" style="margin-top:2rem">
       <div class="card">
         <h3>🌱 Ardün Sticker</h3>
@@ -104,6 +109,12 @@
            rel="noopener">
           Buy via Venmo
         </a>
+
+        <!-- tiny photo bottom-right of THIS card -->
+        <figure class="mini-photo">
+          <img src="IMG_7758.jpeg" alt="Ardün sticker in hand" />
+          <figcaption>Ardün sticker fresh from the greenhouse.</figcaption>
+        </figure>
       </div>
     </div>
 
