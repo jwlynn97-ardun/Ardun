@@ -27,25 +27,111 @@
       --gap:1rem;
       --max:900px;
     }
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.6;color:var(--ink);background:var(--parchment)}
-    img{max-width:100%;display:block}
-    h1,h2,h3{letter-spacing:.5px;color:var(--bronze)}
-    a{text-decoration:none;color:inherit}
-    header{min-height:70vh;display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url("IMG_7376.jpeg") center/cover no-repeat;color:var(--white)}
-    .hero h1{font-size:clamp(2.2rem,5vw,3.5rem)}
-    .hero p{font-size:1.25rem;margin:1rem 0 2rem}
-    .btn{display:inline-block;background:var(--gold);color:var(--ink);padding:.75rem 1.5rem;border-radius:4px;font-weight:700;transition:.3s}
-    .btn:hover{background:var(--bronze);color:var(--white)}
-    section{padding:4rem 1rem}
-    .wrap{max-width:var(--max);margin:auto}
-    .grid{display:grid;gap:var(--gap);grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
-    .card{background:var(--white);padding:1.5rem;border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,.1)}
-    .quote{background:var(--gold);padding:2rem;border-left:6px solid var(--bronze);font-style:italic;margin:2.5rem 0;color:var(--ink)}
-    footer{text-align:center;padding:2rem 1rem;font-size:.9rem;background:var(--brown);color:var(--white)}
-    @media (prefers-contrast:high){body{background:#fff;color:#000}header{background:#000}}
-    /* ---- utility ---- */
-    .flex-btn-gap{display:inline-flex;gap:.75rem;flex-wrap:wrap;justify-content:center}
+
+    * { box-sizing:border-box; margin:0; padding:0 }
+
+    body {
+      font-family:system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      line-height:1.6;
+      color:var(--ink);
+      background:var(--parchment);
+    }
+
+    img { max-width:100%; display:block }
+
+    h1, h2, h3 {
+      letter-spacing:.5px;
+      color:var(--bronze);
+    }
+
+    a { text-decoration:none; color:inherit }
+
+    header {
+      min-height:70vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      background:
+        linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+        url("IMG_7376.jpeg") center / cover no-repeat;
+      color:var(--white);
+    }
+
+    .hero h1 {
+      font-size:clamp(2.2rem, 5vw, 3.5rem);
+    }
+
+    .hero p {
+      font-size:1.25rem;
+      margin:1rem 0 2rem;
+    }
+
+    .btn {
+      display:inline-block;
+      background:var(--gold);
+      color:var(--ink);
+      padding:.75rem 1.5rem;
+      border-radius:4px;
+      font-weight:700;
+      transition:.3s;
+    }
+
+    .btn:hover {
+      background:var(--bronze);
+      color:var(--white);
+    }
+
+    section {
+      padding:4rem 1rem;
+    }
+
+    .wrap {
+      max-width:var(--max);
+      margin:auto;
+    }
+
+    .grid {
+      display:grid;
+      gap:var(--gap);
+      grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+    }
+
+    .card {
+      background:var(--white);
+      padding:1.5rem;
+      border-radius:6px;
+      box-shadow:0 2px 6px rgba(0,0,0,.1);
+    }
+
+    .quote {
+      background:var(--gold);
+      padding:2rem;
+      border-left:6px solid var(--bronze);
+      font-style:italic;
+      margin:2.5rem 0;
+    }
+
+    footer {
+      text-align:center;
+      padding:2rem 1rem;
+      font-size:.9rem;
+      background:var(--brown);
+      color:var(--white);
+    }
+
+    /* utility */
+    .flex-btn-gap {
+      display:inline-flex;
+      gap:.75rem;
+      flex-wrap:wrap;
+      justify-content:center;
+    }
+
+    @media (prefers-contrast:high){
+      body { background:#fff; color:#000 }
+      header { background:#000 }
+    }
   </style>
 </head>
 
@@ -55,6 +141,7 @@
   <div class="hero">
     <h1>Ardün</h1>
     <p>“Heal the soil. Grow the future. Support the people.”</p>
+
     <div class="flex-btn-gap">
       <a class="btn" href="#support">Support Ardün</a>
       <a class="btn" href="shop.html">Shop</a>
@@ -65,29 +152,58 @@
 <section id="about">
   <div class="wrap">
     <h2>Regenerating Indiana’s Land & Communities</h2>
-    <p>Ardün is a project dedicated to regenerating Indiana’s land, restoring ecosystems, and growing resilient communities. We focus on ecological restoration, sustainable food production, and hands-on innovation that respects both people and the planet.</p>
-    <p>Our greenhouses act as living laboratories where plants thrive under controlled environmental conditions, simulating prehistoric soil and atmosphere. Half of our yields support local communities through donations and shared resources; the other half sustains the project so we can continue expanding and innovating.</p>
+    <p>
+      Ardün is a project dedicated to regenerating Indiana’s land,
+      restoring ecosystems, and growing resilient communities.
+    </p>
+    <p>
+      Our greenhouses act as living laboratories where plants thrive under
+      controlled conditions. Half of what we grow supports the community.
+      The rest sustains the work.
+    </p>
 
     <div class="grid" style="margin-top:2rem">
-      <div class="card"><h3>🌱 Regeneration</h3><p>Healing soil and ecosystems first.</p></div>
-      <div class="card"><h3>🤝 Community</h3><p>Sharing resources, knowledge, and growth.</p></div>
-      <div class="card"><h3>🌍 Stewardship</h3><p>Acting ethically for future generations.</p></div>
+      <div class="card">
+        <h3>🌱 Regeneration</h3>
+        <p>Healing soil and ecosystems first.</p>
+      </div>
+      <div class="card">
+        <h3>🤝 Community</h3>
+        <p>Sharing resources, knowledge, and care.</p>
+      </div>
+      <div class="card">
+        <h3>🌍 Stewardship</h3>
+        <p>Acting responsibly for future generations.</p>
+      </div>
     </div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <div class="quote">“Heal the soil. Grow the future. Support the people. Remember the past.”</div>
+    <div class="quote">
+      “Heal the soil. Grow the future. Support the people. Remember the past.”
+    </div>
   </div>
 </section>
 
 <section id="support">
   <div class="wrap">
-    <h2>Support Ardün: Every Seed Grows a Future</h2>
+    <h2>Support Ardün</h2>
     <div class="grid">
-      <a class="btn" href="https://account.venmo.com/u/Joel-Lynn-1" target="_blank" rel="noopener">Venmo @Joel-Lynn-1</a>
-      <a class="btn" href="https://www.tiktok.com/@theatlasinitiative" target="_blank" rel="noopener">Follow on TikTok</a>
+      <a class="btn"
+         href="https://account.venmo.com/u/Joel-Lynn-1"
+         target="_blank"
+         rel="noopener">
+        Venmo @Joel-Lynn-1
+      </a>
+
+      <a class="btn"
+         href="https://www.tiktok.com/@theatlasinitiative"
+         target="_blank"
+         rel="noopener">
+        Follow on TikTok
+      </a>
     </div>
   </div>
 </section>
@@ -96,12 +212,21 @@
   <div class="wrap">
     <h2>Stay Updated</h2>
     <p>Get harvest reports, announcements, and project updates.</p>
-    <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLScCsmLcGctYxaSvoeJcmD_pdPzpQI11ffVe0-gd9GggI0RN1w/viewform?usp=publish-editor" target="_blank" rel="noopener">Subscribe</a>
+
+    <a class="btn"
+       href="https://docs.google.com/forms/d/e/1FAIpQLScCsmLcGctYxaSvoeJcmD_pdPzpQI11ffVe0-gd9GggI0RN1w/viewform?usp=publish-editor"
+       target="_blank"
+       rel="noopener">
+      Subscribe
+    </a>
   </div>
 </section>
 
 <footer>
-  <p>Ardün Project · Indiana · <a href="tel:+13073496762" style="color:var(--gold)">307-349-6762</a></p>
+  <p>
+    Ardün Project · Indiana ·
+    <a href="tel:+13073496762" style="color:var(--gold)">307-349-6762</a>
+  </p>
   <p><a href="#top" style="color:var(--gold)">Back to top</a></p>
 </footer>
 
