@@ -6,11 +6,13 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="Ardün regenerates Indiana’s soil, ecosystems and communities through sustainable greenhouses, shared harvests and open-source knowledge." />
 
+  <!-- Open Graph -->
   <meta property="og:title" content="Ardün – Regenerating Life in Indiana" />
   <meta property="og:description" content="Heal the soil. Grow the future. Support the people." />
   <meta property="og:image" content="https://jwlynn97-ardun.github.io/Ardun/IMG_7376.jpeg" />
   <meta property="og:type" content="website" />
 
+  <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,
     <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
       <text y='.9em' font-size='90'>🌱</text>
@@ -23,7 +25,7 @@
       --gold:#d4af37;
       --brown:#4a3c30;
       --ink:#2a211c;
-      --white:#fff;
+      --white:#ffffff;
       --gap:1rem;
       --max:900px;
     }
@@ -31,7 +33,7 @@
     * { box-sizing:border-box; margin:0; padding:0 }
 
     body {
-      font-family:system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
       line-height:1.6;
       color:var(--ink);
       background:var(--parchment);
@@ -82,9 +84,7 @@
       color:var(--white);
     }
 
-    section {
-      padding:4rem 1rem;
-    }
+    section { padding:4rem 1rem }
 
     .wrap {
       max-width:var(--max);
@@ -127,7 +127,7 @@
       justify-content:center;
     }
 
-    @media (prefers-contrast:high){
+    @media (prefers-contrast:high) {
       body { background:#fff; color:#000 }
       header { background:#000 }
     }
@@ -143,8 +143,8 @@
 
     <div class="flex-btn-gap">
       <a class="btn" href="#support">Support Ardün</a>
-      <!-- FIXED PATH -->
-      <a class="btn" href="Ardun/shop.html">Shop</a>
+      <!-- IMPORTANT: matches filename Shop.html exactly -->
+      <a class="btn" href="Shop.html">Shop</a>
     </div>
   </div>
 </header>
@@ -152,24 +152,25 @@
 <section id="about">
   <div class="wrap">
     <h2>Regenerating Indiana’s Land & Communities</h2>
+
     <p>
-      Ardün is a project dedicated to regenerating Indiana’s land,
-      restoring ecosystems, and growing resilient communities.
+      Ardün is a regenerative project focused on healing soil, restoring ecosystems,
+      and building resilient local food systems in Indiana.
     </p>
+
     <p>
-      Our greenhouses act as living laboratories where plants thrive under
-      controlled conditions. Half of what we grow supports the community.
-      The rest sustains the work.
+      Our greenhouses act as living laboratories. What we grow supports the community
+      first and sustains the work so it can continue.
     </p>
 
     <div class="grid" style="margin-top:2rem">
       <div class="card">
         <h3>🌱 Regeneration</h3>
-        <p>Healing soil and ecosystems first.</p>
+        <p>Healing land and ecosystems first.</p>
       </div>
       <div class="card">
         <h3>🤝 Community</h3>
-        <p>Sharing resources, knowledge, and care.</p>
+        <p>Sharing food, knowledge, and care.</p>
       </div>
       <div class="card">
         <h3>🌍 Stewardship</h3>
@@ -190,6 +191,7 @@
 <section id="support">
   <div class="wrap">
     <h2>Support Ardün</h2>
+
     <div class="grid">
       <a class="btn"
          href="https://account.venmo.com/u/Joel-Lynn-1"
